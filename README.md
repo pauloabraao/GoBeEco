@@ -10,8 +10,7 @@ Minimal React app (Vite) for the GoBeEco project — missions, dashboard and gam
 
 ## Quick start (Windows)
 
-1. Open a terminal in the project folder:
-   cd "c:\Users\paulo\OneDrive\Área de Trabalho\TecWeb\GoBeEcoApp"
+1. Open a terminal in the project folder
 
 2. Install dependencies:
    npm install
