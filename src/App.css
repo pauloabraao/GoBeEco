@@ -2,7 +2,17 @@
   width: 100%;
   margin: 0 auto;
   padding: 0rem;
-  text-align: center;
+  text-align: justify;
+}
+
+:root {
+  --m0: #9dbedd;
+  --m1: #ffab2d;
+  --m2: #26d56f;
+  --m3: #cd51ec;
+  --m4: #1fc0e3;
+  --m5: #deba00;
+  --m6: #e43f7b;
 }
 
 .logo {
