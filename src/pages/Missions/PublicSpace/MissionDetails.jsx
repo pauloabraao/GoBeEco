@@ -1,22 +1,16 @@
 import React from "react";
 import "./missions.css";
-import heroImage from "../../../assets/images/missions/banner-space-public.jpg";
 
 const MissionDetails = () => {
   return (
-    <section
-      className="mission-hero"
-      style={{
-        backgroundImage: `linear-gradient(rgba(196, 98, 0, 0.6), rgba(79, 26, 0, 0.6)), url(${heroImage})`,
-      }}
-    >
-      <div className="mission-content">
-        <div className="mission-text">
-          <span className="mission-tag">Missão 1</span>
+    <section className="public-mission-hero">
+      <div className="public-mission-content">
+        <div className="public-mission-text">
+          <span className="public-mission-tag">Missão 1</span>
 
           <h1>
-            Espaço público - <br />
-            responsabilidade individual
+            Espaço público: <br />
+            Responsabilidade Individual
           </h1>
 
           <h4>Sobre a missão</h4>
@@ -35,14 +29,18 @@ const MissionDetails = () => {
           </p>
         </div>
 
-        <div className="mission-info">
-          <div className="badge-box">
-            <h5>Medalha</h5>
-            <strong>[R]-Evolucionário</strong>
-            <p>para concluir a missão</p>
+        <div className="public-mission-info">
+          <div className="public-badge-box">
+            <div className="public-badge-medal"></div>
+
+            <div className="public-badge-texts">
+              <h5>Medalha</h5>
+              <strong>[R]-Evolucionário</strong>
+              <p>para concluir a missão</p>
+            </div>
           </div>
 
-          <div className="progress-circle">
+          <div className="public-progress-circle">
             <span>6%</span>
           </div>
         </div>

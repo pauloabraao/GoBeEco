@@ -5,59 +5,121 @@
 }
 
 /* HERO SECTION */
-.mission-hero {
-  background-size: cover;
-  background-position: center;
+.home-home-mission-background {
+  position: relative; /* Establishes a positioning context */
   padding: 60px 80px;
   color: white;
+  overflow: hidden; /* Ensures the image doesn't spill out */
+  /* Remove background and filter from here */
 }
-.mission-content {
+
+.home-home-mission-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* 1. The Image */
+  background-image: url("../../../assets/images/missions/home_mission/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* 2. The Color you want (Adjust this HEX code to match your design) */
+  background-color: var(--m2);
+
+  /* 3. The Magic: This replaces the image colors with the green color */
+  background-blend-mode: luminosity;
+
+  /* Optional: Adjust brightness if the text is hard to read */
+  filter: brightness(0.7);
+
+  z-index: 0;
+}
+
+.home-mission-content {
+  position: relative; /* Brings the content forward */
+  z-index: 1; /* Ensures content sits on top of the ::before layer */
+
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
 
-.mission-text {
+.home-mission-text {
   max-width: 650px;
 }
 
-.mission-tag {
+.home-mission-tag {
   font-size: 14px;
   font-weight: 600;
   opacity: 0.8;
 }
 
-.mission-text h1 {
+.home-mission-text h1 {
   font-size: 40px;
   line-height: 1.2;
   margin: 10px 0 20px;
 }
 
-.mission-text h4 {
+.home-mission-text h4 {
   margin-top: 20px;
 }
 
-.mission-text p {
+.home-mission-text p {
   margin-top: 10px;
   line-height: 1.6;
 }
 
 /* BADGE + PROGRESS */
-.mission-info {
+.home-mission-info {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.badge-box {
-  background: #9ec3e6;
-  padding: 20px;
-  border-radius: 12px;
+.home-badge-box {
+  background: #b9d2e8; /* light blue like screenshot */
+  padding: 20px 24px;
+  border-radius: 16px;
   color: #1b3a57;
-  width: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.progress-circle {
+/* Medal image — EXACT SIZE 84×101 */
+.home-badge-medal {
+  width: 84px;
+  height: 101px;
+  background-image: url("../../../assets/images/missions/home_mission/medal.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-badge-texts h5 {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.home-badge-texts strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.home-badge-texts p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.home-progress-circle {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -103,14 +165,6 @@
   background-position: center;
 }
 
-.medal {
-  width: 102px;
-  height: 96px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .challenge-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -138,17 +192,11 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .mission-content {
+  .home-mission-content {
     flex-direction: column;
   }
 
-  .mission-info {
+  .home-mission-info {
     justify-content: flex-start;
   }
-
-  /* .mission-hero,
-  .challenges-section,
-  .quiz-section {
-    padding: 30px 20px;
-  } */
 }

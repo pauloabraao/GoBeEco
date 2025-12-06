@@ -1,23 +1,16 @@
 import React from "react";
 import "./missions.css";
-import heroImage from "../../../assets/images/missions/home_mission/banner-space-home.png";
-import medal from "../../../assets/images/missions/home_mission/medal.png";
 
 const MissionDetails = () => {
   return (
-    <section
-      className="mission-hero"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(${heroImage})`,
-      }}
-    >
-      <div className="mission-content">
-        <div className="mission-text">
-          <span className="mission-tag">Missão 2</span>
+    <section className="home-home-mission-background">
+      <div className="home-mission-content">
+        <div className="home-mission-text">
+          <span className="home-mission-tag">Missão 2</span>
 
           <h1>
-            A sua casa - <br />
-            responsabilidade individual
+            Sua Casa: <br />
+            Responsabilidade Individual
           </h1>
 
           <h4>Sobre a missão</h4>
@@ -36,18 +29,18 @@ const MissionDetails = () => {
           </p>
         </div>
 
-        <div className="mission-info">
-          <div className="badge-box">
-            <div
-              className="medal"
-              style={{ backgroundImage: `url(${medal})` }}
-            ></div>
-            <h5>Medalha</h5>
-            <strong>[R]-Evolucionário</strong>
-            <p>para concluir a missão</p>
+        <div className="home-mission-info">
+          <div className="home-badge-box">
+            <div className="home-badge-medal"></div>
+
+            <div className="home-badge-texts">
+              <h5>Medalha</h5>
+              <strong>Herói Climático Secreto</strong>
+              <p>para concluir a missão</p>
+            </div>
           </div>
 
-          <div className="progress-circle">
+          <div className="home-progress-circle">
             <span>6%</span>
           </div>
         </div>
