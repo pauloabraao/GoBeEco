@@ -1,0 +1,47 @@
+.menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  cursor: pointer;
+  font-size: 22px;
+  color: #1a1a1a;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.profile-icon:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Popup container */
+.popup-menu {
+  position: absolute;
+  top: 36px; /* space below icon */
+  right: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 12px 0;
+  width: 180px;
+  z-index: 10;
+}
+
+/* Buttons inside popup */
+.popup-item {
+  width: 100%;
+  padding: 12px 20px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #0f0f0f;
+  transition: background 0.2s;
+}
+
+.popup-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}

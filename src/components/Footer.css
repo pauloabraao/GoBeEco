@@ -1,0 +1,53 @@
+.footer-container {
+  /* Use Flexbox to stack items vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center;
+
+  padding: 40px 20px;
+  width: 100%;
+  background-color: #fff; /* White background */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Top Row (Links) Styles --- */
+.footer-nav {
+  display: flex;
+  gap: 20px; /* Space between Privacy and FAQ */
+  margin-bottom: 12px; /* Space between the links row and the language row */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #1a1a1a; /* Dark text close to black */
+  font-weight: 600; /* Bold font weight as seen in image */
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Bottom Row (Languages) Styles --- */
+.footer-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Small space between letters and dots */
+  color: #8c9fa8; /* Muted grey/blue tone for the languages */
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.lang-item {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.lang-item:hover {
+  color: #1a1a1a; /* Darken on hover */
+}
+
+.separator {
+  font-weight: bold;
+}
