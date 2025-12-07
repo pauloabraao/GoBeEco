@@ -4,16 +4,14 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* HERO SECTION */
-.home-home-mission-background {
-  position: relative; /* Establishes a positioning context */
+.home-mission-hero {
+  position: relative;
   padding: 60px 80px;
   color: white;
-  overflow: hidden; /* Ensures the image doesn't spill out */
-  /* Remove background and filter from here */
+  overflow: hidden;
 }
 
-.home-home-mission-background::before {
+.home-mission-hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -21,27 +19,19 @@
   width: 100%;
   height: 100%;
 
-  /* 1. The Image */
   background-image: url("../../../assets/images/missions/home_mission/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* 2. The Color you want (Adjust this HEX code to match your design) */
   background-color: var(--m2);
-
-  /* 3. The Magic: This replaces the image colors with the green color */
   background-blend-mode: luminosity;
-
-  /* Optional: Adjust brightness if the text is hard to read */
-  filter: brightness(0.7);
-
+  filter: brightness(0.6) contrast(1.1);
   z-index: 0;
 }
 
 .home-mission-content {
-  position: relative; /* Brings the content forward */
-  z-index: 1; /* Ensures content sits on top of the ::before layer */
+  position: relative;
+  z-index: 1;
 
   display: flex;
   justify-content: space-between;
@@ -81,7 +71,7 @@
 }
 
 .home-badge-box {
-  background: #b9d2e8; /* light blue like screenshot */
+  background: #9ec3e6;
   padding: 20px 24px;
   border-radius: 16px;
   color: #1b3a57;
@@ -91,7 +81,6 @@
   gap: 18px;
 }
 
-/* Medal image — EXACT SIZE 84×101 */
 .home-badge-medal {
   width: 84px;
   height: 101px;
@@ -131,7 +120,6 @@
   font-weight: bold;
 }
 
-/* CHALLENGES */
 .challenges-section {
   padding: 40px 80px;
 }
@@ -139,6 +127,7 @@
 .section-title {
   font-size: 18px;
   margin-bottom: 20px;
+  color: rgb(100 116 139);
 }
 
 .challenges-grid {
@@ -190,13 +179,104 @@
   color: #555;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1068px) {
+  .home-mission-hero,
+  .challenges-section,
+  .quiz-section {
+    padding: 24px 16px;
+  }
+
   .home-mission-content {
     flex-direction: column;
+    gap: 24px;
+  }
+
+  .home-about-mission {
+    display: none;
+  }
+
+  .home-mission-text h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .home-mission-text p {
+    font-size: 14px;
   }
 
   .home-mission-info {
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .home-badge-box {
+    width: 55%;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .home-badge-texts h5 {
+    font-size: 14px;
+  }
+
+  .home-badge-texts strong {
+    font-size: 16px;
+  }
+
+  .home-badge-texts p {
+    font-size: 13px;
+  }
+
+  .home-progress-circle {
+    width: 70px;
+    height: 70px;
+    border-width: 6px;
+    font-size: 14px;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .challenge-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .challenge-card .icon {
+    width: 60px;
+    height: 72px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-mission-text h1 {
+    font-size: 24px;
+  }
+
+  .home-badge-box {
+    flex-direction: row;
+  }
+
+  .home-badge-medal {
+    width: 60px;
+    height: 70px;
+  }
+
+  .home-progress-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .challenge-card .icon {
+    width: 54px;
+    height: 65px;
   }
 }

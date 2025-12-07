@@ -13,17 +13,19 @@ const MissionDetails = () => {
             Responsabilidade Individual
           </h1>
 
-          <h4>Sobre a missão</h4>
-          <p>Pequenos hábitos - pequenas mudanças que mudam tudo.</p>
+          <h4 className="public-about-mission">Sobre a missão</h4>
+          <p className="public-about-mission">
+            Pequenos hábitos - pequenas mudanças que mudam tudo.
+          </p>
 
-          <p>
+          <p className="public-about-mission">
             Quem quer que frequente, a qualquer momento e em qualquer lugar,
             espaços públicos, deve lembrar-se: é nossa responsabilidade
             partilhada deixá-los, pelo menos, na mesma condição que os
             encontrámos.
           </p>
 
-          <p>
+          <p className="public-about-mission">
             Espaços públicos são todos aqueles de acesso livre e fácil. Não são
             "lugares de ninguém": são lugares teus também.
           </p>

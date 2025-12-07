@@ -5,12 +5,12 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 import MissionDetails from "./MissionDetails";
-import icon_1 from "../../../assets/images/missions/public_mission/icons/icon-1.png";
-import icon_2 from "../../../assets/images/missions/public_mission/icons/icon-2.png";
-import icon_3 from "../../../assets/images/missions/public_mission/icons/icon-3.png";
-import icon_4 from "../../../assets/images/missions/public_mission/icons/icon-4.png";
+import icon_1 from "../../../assets/images/missions/work_mission/icons/icon-1.png";
+import icon_2 from "../../../assets/images/missions/work_mission/icons/icon-2.png";
+import icon_3 from "../../../assets/images/missions/work_mission/icons/icon-3.png";
+import icon_4 from "../../../assets/images/missions/work_mission/icons/icon-4.png";
 
-const MissionsPublic = () => {
+const MissionsWork = () => {
   return (
     <>
       <Navbar />
@@ -79,4 +79,4 @@ const MissionsPublic = () => {
   );
 };
 
-export default MissionsPublic;
+export default MissionsWork;

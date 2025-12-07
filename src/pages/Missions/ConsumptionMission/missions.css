@@ -4,14 +4,14 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-.public-mission-hero {
+.consumption-mission-hero {
   position: relative;
   padding: 60px 80px;
   color: white;
   overflow: hidden;
 }
 
-.public-mission-hero::before {
+.consumption-mission-hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -19,17 +19,17 @@
   width: 100%;
   height: 100%;
 
-  background-image: url("../../../assets/images/missions/public_mission/background.jpg");
+  background-image: url("../../../assets/images/missions/consumption_mission/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--m1);
+  background-color: var(--m3);
   background-blend-mode: luminosity;
   filter: brightness(0.6) contrast(1.1);
   z-index: 0;
 }
 
-.public-mission-content {
+.consumption-mission-content {
   position: relative;
   z-index: 1;
 
@@ -38,39 +38,39 @@
   gap: 40px;
 }
 
-.public-mission-text {
+.consumption-mission-text {
   max-width: 650px;
 }
 
-.public-mission-tag {
+.consumption-mission-tag {
   font-size: 14px;
   font-weight: 600;
   opacity: 0.8;
 }
 
-.public-mission-text h1 {
+.consumption-mission-text h1 {
   font-size: 40px;
   line-height: 1.2;
   margin: 10px 0 20px;
 }
 
-.public-mission-text h4 {
+.consumption-mission-text h4 {
   margin-top: 20px;
 }
 
-.public-mission-text p {
+.consumption-mission-text p {
   margin-top: 10px;
   line-height: 1.6;
 }
 
 /* BADGE + PROGRESS */
-.public-mission-info {
+.consumption-mission-info {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.public-badge-box {
+.consumption-badge-box {
   background: #9ec3e6;
   padding: 20px 24px;
   border-radius: 16px;
@@ -81,34 +81,34 @@
   gap: 18px;
 }
 
-.public-badge-medal {
+.consumption-badge-medal {
   width: 84px;
   height: 101px;
-  background-image: url("../../../assets/images/missions/public_mission/medal.svg");
+  background-image: url("../../../assets/images/missions/consumption_mission/medal.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.public-badge-texts h5 {
+.consumption-badge-texts h5 {
   margin: 0;
   font-size: 16px;
   opacity: 0.8;
 }
 
-.public-badge-texts strong {
+.consumption-badge-texts strong {
   display: block;
   margin-top: 4px;
   font-size: 18px;
 }
 
-.public-badge-texts p {
+.consumption-badge-texts p {
   margin: 4px 0 0;
   font-size: 14px;
   opacity: 0.9;
 }
 
-.public-progress-circle {
+.consumption-progress-circle {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -180,55 +180,55 @@
 }
 
 @media (max-width: 1068px) {
-  .public-mission-hero,
+  .consumption-mission-hero,
   .challenges-section,
   .quiz-section {
     padding: 24px 16px;
   }
 
-  .public-mission-content {
+  .consumption-mission-content {
     flex-direction: column;
     gap: 24px;
   }
 
-  .public-about-mission {
+  .consumption-about-mission {
     display: none;
   }
 
-  .public-mission-text h1 {
+  .consumption-mission-text h1 {
     font-size: 28px;
     line-height: 1.25;
   }
 
-  .public-mission-text p {
+  .consumption-mission-text p {
     font-size: 14px;
   }
 
-  .public-mission-info {
+  .consumption-mission-info {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
   }
 
-  .public-badge-box {
+  .consumption-badge-box {
     width: 55%;
     padding: 16px;
     gap: 12px;
   }
 
-  .public-badge-texts h5 {
+  .consumption-badge-texts h5 {
     font-size: 14px;
   }
 
-  .public-badge-texts strong {
+  .consumption-badge-texts strong {
     font-size: 16px;
   }
 
-  .public-badge-texts p {
+  .consumption-badge-texts p {
     font-size: 13px;
   }
 
-  .public-progress-circle {
+  .consumption-progress-circle {
     width: 70px;
     height: 70px;
     border-width: 6px;
@@ -257,20 +257,20 @@
 }
 
 @media (max-width: 480px) {
-  .public-mission-text h1 {
+  .consumption-mission-text h1 {
     font-size: 24px;
   }
 
-  .public-badge-box {
+  .consumption-badge-box {
     flex-direction: row;
   }
 
-  .public-badge-medal {
+  .consumption-badge-medal {
     width: 60px;
     height: 70px;
   }
 
-  .public-progress-circle {
+  .consumption-progress-circle {
     width: 60px;
     height: 60px;
   }
