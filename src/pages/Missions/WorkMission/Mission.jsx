@@ -27,7 +27,7 @@ const MissionsWork = () => {
                 style={{ backgroundImage: `url(${icon_1})` }}
               ></div>
               <div>
-                <h4>Modelos a Seguir - Em movimento!</h4>
+                <h4>Se Fixe - Poupa Energia e Combustível!</h4>
                 <p>0 pts</p>
               </div>
             </Link>
@@ -38,7 +38,7 @@ const MissionsWork = () => {
                 style={{ backgroundImage: `url(${icon_2})` }}
               ></div>
               <div>
-                <h4>Heróis Verdes, Guardiões de Parques e Florestas</h4>
+                <h4>Bom Ambiente de Trabalho para um Bom Ambiente na Terra</h4>
                 <p>0 pts</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ const MissionsWork = () => {
                 style={{ backgroundImage: `url(${icon_3})` }}
               ></div>
               <div>
-                <h4>Animal Social Sustentável - És tu o TAL?</h4>
+                <h4>Anedotas sobre Ar Condicionado? Não sou "fan"...</h4>
                 <p>0 pts</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ const MissionsWork = () => {
                 style={{ backgroundImage: `url(${icon_4})` }}
               ></div>
               <div>
-                <h4>Baywatch - 1,2,3, vai!</h4>
+                <h4>Não é Fácil ser Verde</h4>
                 <p>25 pts</p>
               </div>
             </div>

@@ -4,11 +4,14 @@ import "./AccountMenu.css";
 export default function AccountMenu({ open, onClose }) {
   const menuRef = useRef(null);
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        onClose(); // tell Navbar to close
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        !e.target.closest(".user-icon") // Exclude user icon from outside click
+      ) {
+        onClose();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);

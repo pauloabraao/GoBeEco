@@ -9,6 +9,12 @@
   padding: 60px 80px;
   color: white;
   overflow: hidden;
+  width: 100%;
+  height: 510px;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .work-mission-hero::before {
@@ -84,7 +90,7 @@
 .work-badge-medal {
   width: 84px;
   height: 101px;
-  background-image: url("../../../assets/images/missions/work_mission/medal.svg");
+  background-image: url("../../../assets/images/missions/work_mission/medal.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -9,6 +9,11 @@
   padding: 60px 80px;
   color: white;
   overflow: hidden;
+  width: 100%;
+  height: 510px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .home-mission-hero::before {
@@ -185,6 +190,9 @@
   .quiz-section {
     padding: 24px 16px;
   }
+  .home-mission-hero {
+    height: 150px;
+  }
 
   .home-mission-content {
     flex-direction: column;
@@ -214,6 +222,7 @@
     width: 55%;
     padding: 16px;
     gap: 12px;
+    display: none;
   }
 
   .home-badge-texts h5 {
@@ -233,6 +242,7 @@
     height: 70px;
     border-width: 6px;
     font-size: 14px;
+    display: none;
   }
 
   .challenges-grid {
@@ -257,12 +267,16 @@
 }
 
 @media (max-width: 480px) {
+  .home-mission-hero {
+    height: 150px;
+  }
   .home-mission-text h1 {
     font-size: 24px;
   }
 
   .home-badge-box {
     flex-direction: row;
+    display: none;
   }
 
   .home-badge-medal {
@@ -273,6 +287,7 @@
   .home-progress-circle {
     width: 60px;
     height: 60px;
+    display: none;
   }
 
   .challenge-card .icon {

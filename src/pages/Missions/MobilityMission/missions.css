@@ -9,6 +9,11 @@
   padding: 60px 80px;
   color: white;
   overflow: hidden;
+  width: 100%;
+  height: 510px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .mobility-mission-hero::before {
@@ -68,6 +73,8 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .mobility-badge-box {
@@ -84,7 +91,7 @@
 .mobility-badge-medal {
   width: 84px;
   height: 101px;
-  background-image: url("../../../assets/images/missions/mobility_mission/medal.svg");
+  background-image: url("../../../assets/images/missions/mobility_mission/medal.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

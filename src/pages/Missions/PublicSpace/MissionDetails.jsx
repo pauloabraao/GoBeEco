@@ -27,7 +27,7 @@ const MissionDetails = () => {
 
           <p className="public-about-mission">
             Espaços públicos são todos aqueles de acesso livre e fácil. Não são
-            "lugares de ninguém": são lugares teus também.
+            "lugares de ninguém": são lugares seus também.
           </p>
         </div>
 

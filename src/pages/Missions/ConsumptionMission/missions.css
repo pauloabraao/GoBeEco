@@ -9,6 +9,11 @@
   padding: 60px 80px;
   color: white;
   overflow: hidden;
+  width: 100%;
+  height: 510px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .consumption-mission-hero::before {
@@ -84,7 +89,7 @@
 .consumption-badge-medal {
   width: 84px;
   height: 101px;
-  background-image: url("../../../assets/images/missions/consumption_mission/medal.svg");
+  background-image: url("../../../assets/images/missions/consumption_mission/medal.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,6 +219,7 @@
     width: 55%;
     padding: 16px;
     gap: 12px;
+    display: none;
   }
 
   .consumption-badge-texts h5 {
@@ -233,6 +239,7 @@
     height: 70px;
     border-width: 6px;
     font-size: 14px;
+    display: none;
   }
 
   .challenges-grid {
@@ -257,12 +264,17 @@
 }
 
 @media (max-width: 480px) {
+  .home-mission-hero {
+    height: 150px;
+  }
+
   .consumption-mission-text h1 {
     font-size: 24px;
   }
 
   .consumption-badge-box {
     flex-direction: row;
+    display: none;
   }
 
   .consumption-badge-medal {
@@ -273,6 +285,7 @@
   .consumption-progress-circle {
     width: 60px;
     height: 60px;
+    display: none;
   }
 
   .challenge-card .icon {
