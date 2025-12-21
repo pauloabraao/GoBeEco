@@ -21,7 +21,10 @@ const MissionsWork = () => {
           <h3 className="section-title">Desafios</h3>
 
           <div className="challenges-grid">
-            <Link to="/challenges/1" className="challenge-card highlight">
+            <Link
+              to="/challenges/work/1"
+              className="work-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_1})` }}
@@ -32,7 +35,10 @@ const MissionsWork = () => {
               </div>
             </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/work/2"
+              className="work-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_2})` }}
@@ -41,9 +47,12 @@ const MissionsWork = () => {
                 <h4>Bom Ambiente de Trabalho para um Bom Ambiente na Terra</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/work/3"
+              className="work-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_3})` }}
@@ -52,9 +61,12 @@ const MissionsWork = () => {
                 <h4>Anedotas sobre Ar Condicionado? Não sou "fan"...</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/work/4"
+              className="work-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_4})` }}
@@ -63,7 +75,7 @@ const MissionsWork = () => {
                 <h4>Não é Fácil ser Verde</h4>
                 <p>25 pts</p>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 

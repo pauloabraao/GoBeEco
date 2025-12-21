@@ -22,7 +22,10 @@ const MissionsHome = () => {
           <h3 className="section-title">Desafios</h3>
 
           <div className="challenges-grid">
-            <Link to="/challenges/1" className="challenge-card highlight">
+            <Link
+              to="/challenges/home/1"
+              className="home-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_1})` }}
@@ -33,7 +36,10 @@ const MissionsHome = () => {
               </div>
             </Link>
 
-            <Link to="/challenges/2" className="challenge-card highlight">
+            <Link
+              to="/challenges/home/2"
+              className="home-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_2})` }}
@@ -44,7 +50,10 @@ const MissionsHome = () => {
               </div>
             </Link>
 
-            <Link to="/challenges/3" className="challenge-card highlight">
+            <Link
+              to="/challenges/home/3"
+              className="home-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_3})` }}
@@ -55,7 +64,10 @@ const MissionsHome = () => {
               </div>
             </Link>
 
-            <Link to="/challenges/4" className="challenge-card highlight">
+            <Link
+              to="/challenges/home/4"
+              className="home-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_4})` }}
@@ -66,7 +78,10 @@ const MissionsHome = () => {
               </div>
             </Link>
 
-            <Link to="/challenges/5" className="challenge-card highlight">
+            <Link
+              to="/challenges/home/5"
+              className="home-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_5})` }}

@@ -5,50 +5,59 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/consumption_mission/icons/icon-1.png";
 
-const ChallengePublic02 = () => {
+const ChallengeConsumption01 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Comprar, Não Comprar, Ou o que Comprar: Essa é a Questão!",
+    bonusPoints: 100,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "As próximas tarefas pretendem ajudar-te a ser mais consciente ecologicamente na aquisição e uso de diferentes tipos de bens de consumo.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "Devo confiar nesta marca ou não?",
+        points: 10,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          'Descarrega a aplicação "Moda Livre" (disponível em inglês) ou uma semelhante e verifica o quão éticas são as marcas que utilizas. Publica os resultados e partilha-os com pelo menos 2 amigos.',
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Torna-te um mestre da reparação!",
+        points: 50,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "A tua tarefa consiste em escolher um item do teu guarda-roupa que já não usas e transformá-lo numa outra coisa (por exemplo, transformar um vestido numa camisa ou saia). Uma vez por seman...",
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Que ouriço!",
+        title: "Espera, nós vamos para (a tua segunda) casa",
         points: 25,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Percorre os teus bens (podem ser roupas, sapatos, artigos de entretenimento ou até cosméticos que ainda não tenham sido utilizados ou que tenham sido acabados de usar, mas ainda em bom estado)...",
         link: "",
       },
       {
         id: 4,
+        difficulty: "Difícil",
+        title: "Apenas o essencial!",
+        points: 50,
+        description:
+          "Realiza o desafio dos 30 dias com a tua roupa. Começa no primeiro dia do mês e todos os dias escolhe um outfit completo. No final do mês, analisa o teu guarda-roupa, se houver um artigo que...",
+        link: "",
+      },
+      {
+        id: 5,
         difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
+        title: "À procura de tesouros!",
         points: 10,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          'Elabora uma "mapa" de lojas em segunda mão e websites (made.trade ou shopearthhero, por exemplo). Sempre que precises de comprar algo, dá preferência a essas mesmas lojas. Partilha o...',
         link: "",
       },
     ],
@@ -120,4 +129,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeConsumption01;

@@ -7,48 +7,39 @@ import "./challenges.css";
 
 import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-1.png";
 
-const Challenges = () => {
+const ChallengePublic03 = () => {
   const challengeData = {
-    title: "Modelos a Seguir - Em movimento!",
-    bonusPoints: 100,
+    title: "Animal Social Sustentável - És tu o TAL?",
+    bonusPoints: 50,
     description:
-      "Ruas, avenidas ou paragens de autocarro - todas estas são possíveis passarelas para modelos sustentáveis. Mostra os teus melhores movimentos ecológicos e entra na onda amiga do ambiente!",
-    progressPercentage: 25,
+      "Concertos ao ar livre, estádios, feiras, espaços de exercício físico, parques infantis todos nos convidam a visitá-los... mas não a destruí-los.",
+    progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Fácil",
-        title: "O meu lixo - o meu problema",
-        points: 10,
+        difficulty: "Difícil",
+        title: "Adota um parque - persegue os mastigadores!",
+        points: 75,
         description:
-          "Quando regressares de um passeio, de uma viagem, de uma caminhada, traz de volta tudo aquilo que levaste contigo. Como? Coloca todo o lixo e desperdício num saco co...",
+          "Escolhe um local para piqueniques, um ginásio ao ar livre ou um parque de diversões, e apanha a pastilha elástica que encontrares. Se visitares estes sítios semanalmente, garante que recolhes...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Fácil",
-        title: "TATG - Traz A Tua Garrafa",
-        points: 10,
+        difficulty: "Médio",
+        title: '"Rain on me / Cry me a River"',
+        points: 25,
         description:
-          "A correr pela cidade? À espera de um autocarro? Ou só a vaguear? Mais tarde ou mais cedo irás sentir sede. Lembra-te disto antes de saires de casa - leva sempre contigo...",
+          "És fã de Lady Gaga ou Justin Timberlake? Ou conheces outras músicas relacionadas com água? De uma forma ou de outra, temos todos de tentar chamar a atenção das pessoas que nos rodeiam par...",
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Diz não aos apanhadores de folhas",
+        title: "Jardins, jardins em todo o lado...",
         points: 25,
         description:
-          "Quando estiveres a passear à sombra de uma árvore ou a passar por arbustos e plantas, evita apanhar folhas e flores ou partir ramos. Se a tua reação imediata é 'O quê?! Eu...",
-        link: "",
-      },
-      {
-        id: 4,
-        difficulty: "Difícil",
-        title: "Acaba com o barulho, sê único!",
-        points: 75,
-        description:
-          "Planta uma árvore ou um arbusto para combater o barulho. Envolve-te na guerrilha da jardinagem e fala com as autoridades locais para perceberes quais os melhores locais...",
+          "As viagens de curta duração podem ter também um grande impacto em nós. Tenta verificar as zonas que normalmente visitas com os teus amigos ou onde te encontres com outras pessoas e procura...",
         link: "",
       },
     ],
@@ -61,7 +52,7 @@ const Challenges = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/2" className="back-link">
+            <a href="/mission/1" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +111,4 @@ const Challenges = () => {
   );
 };
 
-export default Challenges;
+export default ChallengePublic03;

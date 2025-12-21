@@ -5,50 +5,41 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/work_mission/icons/icon-3.png";
 
-const ChallengePublic02 = () => {
+const ChallengeWork03 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Anedotas sobre Ar Condicionado? Não sou 'fan'...",
+    bonusPoints: 85,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Em tempos de pandemia COVID-19, a ventilação tornou-se ainda mais importante. A circulação de ar garante que a quantidade de carbono é reduzida, o que permite que nos concentremos melhor.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "Um passarinho disse-me que não estás a ventilar o suficiente",
+        points: 10,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "Areja o escritório a cada hora durante 3 minutos. Quanto mais frio estiver lá fora, menor é o tempo de ventilação. Tenta fazê-lo durante um dia inteiro. Caso necessário, programa um temporizador!",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Tudo o que consegues aquecer!",
+        points: 50,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Quando saíres do escritório no Inverno, baixa o aquecimento. Mas não desligues por completo porque, caso esteja muito frio, é necessária muito mais energia para aquecer o espaço novamente....",
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Que ouriço!",
+        title: "Dia frio de abril!",
         points: 25,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
-        link: "",
-      },
-      {
-        id: 4,
-        difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
-        points: 10,
-        description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Utiliza o arrefecimento noturno e abre as portas e janelas durante a noite. Caso isso não seja possível, abre-as de manhã cedo. Reduz as fontes de calor internas e desliga todos os dispositivos...",
         link: "",
       },
     ],
@@ -61,7 +52,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/4" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +111,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeWork03;

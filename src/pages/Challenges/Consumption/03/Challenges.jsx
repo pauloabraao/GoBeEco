@@ -5,50 +5,50 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/consumption_mission/icons/icon-3.png";
 
-const ChallengePublic02 = () => {
+const ChallengeConsumption03 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Tu vs Poluição - Ganha a Batalha!",
+    bonusPoints: 100,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Irás aprender a verificar a origem dos bens que compras, a ver quem os produziu, e a confirmar se os recursos utilizados no processo são poluentes para o ambiente ou não.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "Verifica as tuas etiquetas!",
+        points: 10,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "A tarefa é muito simples! Vai ao teu guarda-roupa e verifica as etiquetas de 2-5 peças de roupa. Que informações consegues encontrar? Verifica também se são 100% sintéticas com poliéster ou...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Verifica o teu prato",
+        points: 50,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Anota todos os alimentos que comes durante um dia e confirma na Internet qual o seu efeito poluente no planeta. Há muitos websites que te podem ajudar a descobrir o quão poluente foi a tua...",
         link: "",
       },
       {
         id: 3,
-        difficulty: "Médio",
-        title: "Que ouriço!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "A tua lista pessoal sustentável",
+        points: 50,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Faz uma lista de lojas onde podes comprar vestuário sustentável, feito de algodão orgânico e/ou que apresente toda a informação necessária sobre a sua origem. Verifica também se as roupas são 100...",
         link: "",
       },
       {
         id: 4,
-        difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
-        points: 10,
+        difficulty: "Médio",
+        title: "Um passo por dia para manter o plástico a milhas!",
+        points: 25,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Revê os teus produtos de cosméticos e de higiene. Tenta verificar aqueles que podem conter micropiásticos e evita comprar esses produtos no futuro. Há algumas aplicações que te podem...",
         link: "",
       },
     ],
@@ -120,4 +120,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeConsumption03;

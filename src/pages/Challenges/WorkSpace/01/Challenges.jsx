@@ -5,50 +5,59 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/work_mission/icons/icon-1.png";
 
-const ChallengePublic02 = () => {
+const ChallengeWork01 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Sê Fixe - Poupa Energia e Combustível!",
+    bonusPoints: 105,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
-    progressPercentage: 0,
+      "As mudanças diárias têm um grande impacto no clima! Reduzir o consumo de eletricidade reduz também as emissões das centrais elétricas, o que contribui para conservar os recursos naturais e ecossistemas.",
+    progressPercentage: 20,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "Desperdício de energia faz-me ferver o sangue!",
+        points: 10,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "De cada vez que ferveres água para café ou chá, tenta garantir que se trata da quantidade certa para as chávenas que vais servir. Podes calcular a água necessária usando a medida da chávena.",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Fácil",
+        title: "Se não estás a usar, podes desligar!",
+        points: 10,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Desliga o teu computador e o ecrã de cada vez que fizeres uma pausa, e todos os dias quando saíres do escritório.",
         link: "",
       },
       {
         id: 3,
-        difficulty: "Médio",
-        title: "Que ouriço!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Vamos trabalhar!",
+        points: 50,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Em vez de ires de carro para o trabalho, tenta, pelo menos três vezes por semana, caminhar, ir de bicicleta, usar transportes públicos ou recorrer à boleia de outros colegas.",
         link: "",
       },
       {
         id: 4,
         difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
+        title: "Tens correio!",
         points: 10,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          '"Se a Internet fosse um Estado, seria o país com o terceiro maior consumo de eletricidade do planeta. Apenas a China e os Estados Unidos da América consomem mais." Esvazia a tua caixa de...',
+        link: "",
+      },
+      {
+        id: 5,
+        difficulty: "Médio",
+        title: "Hora do almoço!",
+        points: 25,
+        description:
+          "Prepara o almoço de 3 ou 4 dias! Irás poupar tempo e energia!",
         link: "",
       },
     ],
@@ -61,7 +70,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/4" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +129,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeWork01;

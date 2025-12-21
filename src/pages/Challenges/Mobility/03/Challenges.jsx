@@ -5,50 +5,59 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/mobility_mission/icons/icon-3.png";
 
-const ChallengePublic02 = () => {
+const ChallengeMobility03 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Torna-te um EcoCondutor",
+    bonusPoints: 110,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Mesmo que não consigas imaginar a tua vida sem um carro, podes tentar mudar os teus hábitos de forma a não prejudicar tanto o ambiente. Tenta!",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Médio",
+        title: "Mestre da Condução Ecológica",
+        points: 25,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "Assiste a uma aula de condução sobre poupar combustível: https://www.youtube.com/watch?v=LWEnzWOx8FO https://www.youtube.com/watch?v=55tyMR_d-tc Se não conduzes, procura uma...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Fácil",
+        title: "Táticas para uma condução ecológica",
+        points: 10,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Enquanto conduzes, tenta recorrer a pelo menos 3 táticas ecológicas e continuar a aplicá-las durante uma semana. Se não conduzes, partilha esta informação com os teus amigos que o fazem.",
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Que ouriço!",
+        title: "Conductor solitário - nunca mais!",
         points: 25,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Organiza as tuas boleias através de um grupo no Facebook ou de uma conta no Blablacar. Evita viajar sozinho de carro, sem outros passageiros, já que tal não é económico. Conduzir sozinho aumenta ...",
         link: "",
       },
       {
         id: 4,
+        difficulty: "Médio",
+        title: "O teu carro não tem de brilhar!",
+        points: 25,
+        description:
+          "Lava o teu carro no máximo uma vez por mês, e apenas em locais próprios para tal, que estão equipados com as superfícies adequadas e com um sistema de esgotos. Se não conduzes, partilha...",
+        link: "",
+      },
+      {
+        id: 5,
         difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
+        title: "Vê como estacionas!",
         points: 10,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Estaciona apenas em locais adequados e não em jardins ou passeios. Não conduzes? Partilha esta informação com quem o faz.",
         link: "",
       },
     ],
@@ -61,7 +70,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/5" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +129,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeMobility03;

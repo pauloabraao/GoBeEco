@@ -5,50 +5,50 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/consumption_mission/icons/icon-2.png";
 
-const ChallengePublic02 = () => {
+const ChallengeConsumption02 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Somos o que comemos. O que queres ser?",
+    bonusPoints: 100,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Este desafio irá ensinar-te a avaliar o nível de sustentabilidade da tua comida e ajudarte-á a fazer escolhas mais ecológicas no que diz respeito às tuas refeições.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
         difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        title: "Esta comida é realmente boa?",
+        points: 50,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "Durante uma semana, tenta anotar tudo o que comes. Há muitos fatores que podem contribuir para tornar a tua comida mais ou menos prejudicial para o planeta. Usa um semáforo de sustentabilidad...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Fácil",
+        title: "Demasiado bom para ir!",
+        points: 10,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          'Instala a aplicação "Too Good to Go", disponível em vários países europeus, incluindo Portugal, Polónia e Alemanha, e usa-a da próxima vez que queiras encomendar...',
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Que ouriço!",
+        title: "Comendo flores e plantas selvagens",
         points: 25,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Alguma vez consideraste comer flores ou plantas selvagens? Embora possa parecer estranho no início, muitas delas são comestíveis e podem integrar deliciosas refeições. Tenta encontrar uma...",
         link: "",
       },
       {
         id: 4,
-        difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
-        points: 10,
+        difficulty: "Médio",
+        title: "Opta pelo local!",
+        points: 25,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Dá um passeio pelas redondezas ou pela tua cidade e faz uma lista de lojas locais onde podes comprar diferentes artigos. Depois, ao fazeres a tua lista de compras de mercearia, escreve à frente...",
         link: "",
       },
     ],
@@ -120,4 +120,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeConsumption02;

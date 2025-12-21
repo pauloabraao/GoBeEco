@@ -5,50 +5,41 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-4.png";
 
-const ChallengePublic02 = () => {
+const ChallengePublic04 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Baywatch - 1,2,3, val!",
+    bonusPoints: 25,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Fazer caiaque ou só relaxar à beira do rio - tão bom. Mas o que farás com o plástico da barra de chocolate que comeste para teres energia?",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Médio",
+        title: "Passa de mascador a chiczador! Chegou o momento!",
+        points: 25,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "És um mascador? Nem por isso? Os teus amigos e família fazem parte do grupo de mascadores? Chegou o momento de tornar o mascar de pastilha elástica um hábito eco-saudável. Online ou num...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Não podes salvar o mundo sozinho!",
+        points: 75,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Conta a um amigo sobre esta gamificação e o seu sucesso na poupança de recursos. Quanto mais pessoas jogarem, maior será o impacto que teremos. Por isso, faz com que todo o mundo saiba!",
         link: "",
       },
       {
         id: 3,
-        difficulty: "Médio",
-        title: "Que ouriço!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Deixa as árvores e as abelhas em paz!",
+        points: 75,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
-        link: "",
-      },
-      {
-        id: 4,
-        difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
-        points: 10,
-        description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Os espaços verdes têm habitantes indígenas - árvores, plantas, animais, aves, insetos e...mosquitos. Quer queiras quer não, és um visitante, por isso comporta-te como um convidado culto, não...",
         link: "",
       },
     ],
@@ -61,7 +52,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/5" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +111,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengePublic04;

@@ -5,50 +5,59 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/work_mission/icons/icon-2.png";
 
-const ChallengePublic02 = () => {
+const ChallengeWork02 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Bom Ambiente de Trabalho para um Bom Ambiente na Terra",
+    bonusPoints: 65,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Um ambiente de trabalho positivo faz com que os funcionários se sintam mais felizes, criativos e inovadores. Pequenas mudanças sustentáveis contribuem uma atmosfera mais saudável.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "O verde mantém o ar limpo!",
+        points: 10,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "É verde, é ecológica, e contribui para a tua saúde! Leva uma planta para o teu escritório e torna o teu espaço de trabalho mais limpo!",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Fácil",
+        title: "Partilhar é Cuidar",
+        points: 10,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Torna-te o colega preferido de toda a gente partilhando a tua comida! Fala com os teus colegas sobre esta possibilidade. Bónus: Partilha a comida que sobrou em tua casa com os teus colegas!...",
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Que ouriço!",
+        title: "Forma uma equipa!",
         points: 25,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Sê corajoso! Fala com os teus colegas sobre uma questão de sustentabilidade que pode estar a afetar a vossa vida diária no escritório. Por exemplo: separação do lixo, poupança de energia, etc.",
         link: "",
       },
       {
         id: 4,
         difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
+        title: "Imprime em modo ecológico",
         points: 10,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Pensa duas vezes antes de imprimires documentos, e se o fizeres, tenta imprimir na frente e verso do papel. Tenta fazer isto pelo menos uma vez por semana!",
+        link: "",
+      },
+      {
+        id: 5,
+        difficulty: "Fácil",
+        title: "A temperatura ideal",
+        points: 10,
+        description:
+          "Configura a temperatura da sala de forma a que esteja agradável para todos. Ventila-a pelo menos uma vez por dia, durante 5-10 minutos, dependendo da estação em que se encontram. Repete o...",
         link: "",
       },
     ],
@@ -61,7 +70,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/4" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +129,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeWork02;

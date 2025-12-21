@@ -5,50 +5,59 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/mobility_mission/icons/icon-1.png";
 
-const ChallengePublic02 = () => {
+const ChallengeMobility01 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "A Forma como te Moves",
+    bonusPoints: 175,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Muda a forma como te deslocas - procura alternativas a usar o carro e descobre as vantagens dos transportes públicos, da partilha de veículos, das bicicletas, scooters ou de caminhar.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Médio",
+        title: "10 000 pequenos passos",
+        points: 25,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "Pequeno enigma: O que é que simultaneamente diminui a pressão arterial, equilibra os níveis de glucose, reduz o stress e o peso corporal, e reduz as emissões de CO2 para a atmosfera? A respost...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Difícil",
+        title: "Um encontro numa scooter",
+        points: 50,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Já pensaste em comprar uma scooter elétrica mas são muito caras? Em muitas cidades grandes, já podes alugar uma! Podes ir dar um passeio e levar contigo um amigo ou um parceiro romântico!",
         link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Que ouriço!",
+        title: "Reúne o teu gangue!",
         points: 25,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Conduzir um carro sozinho é chato, certo? A viagem diária para o trabalho pode ser bastante aborrecida. Não há ninguém para conversar e não é assim tão bom cantar sozinho no carro,...",
         link: "",
       },
       {
         id: 4,
-        difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
-        points: 10,
+        difficulty: "Médio",
+        title: "Bla bla no carro",
+        points: 25,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Gostas de conversar no carro? Então dá uma olhada ao site: https://www.blablacar.co.uk/ Se fores fazer uma longa viagem, cria uma conta no BlaBlaCar e prepara-te para ofereceres boleia a outras...",
+        link: "",
+      },
+      {
+        id: 5,
+        difficulty: "Difícil",
+        title: "Trânsito mal-cheiroso",
+        points: 50,
+        description:
+          "Não gostas de andar de transportes públicos porque por vezes o cheiro é desgradável? Achas que é muito melhor no teu carro? Se calhar não tens noção de que ele também emite maus cheiros! Tenta...",
         link: "",
       },
     ],
@@ -61,7 +70,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/5" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +129,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeMobility01;

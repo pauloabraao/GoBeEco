@@ -5,50 +5,50 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-2.png";
+import icon_1 from "../../../../assets/images/missions/mobility_mission/icons/icon-2.png";
 
-const ChallengePublic02 = () => {
+const ChallengeMobility02 = () => {
   const challengeData = {
-    title: "Heróis Verdes, Guardiões de Parques e Florestas, Preparem-se!",
-    bonusPoints: 10,
+    title: "Mede a tua Pegada",
+    bonusPoints: 55,
     description:
-      "TORNA-TE ECOLÓGICO & MANTÉM TUDO LIMPO. Todos frequentamos espaços públicos, e todos temos o direito de os encontrar limpos e bem apresentados. Quando estiveres num parque ou numa floresta, sê como um escuteiro, e deixa o espaço melhor do que como o encontraste.",
+      "Os hábitos de mobilidade têm um grande impacto na mudança climática, devido às emissões de CO2. Este desafio irá ajudar-te a reduzir a pegada carbónica associada aos transportes que usas.",
     progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Difícil",
-        title: "Torna-te num vigilante do desperdício!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "Pé grande",
+        points: 10,
         description:
-          "Escolhe um dia da semana para te tornares um vigilante do desperdício. Para esta tarefa terás de apanhar todo o lixo (seguro e não-tóxico) que encontres ao longo do teu caminho (durante uma...",
+          "Sabes qual é o tamanho do teu pé? Sim, sim, este pé que deixa uma marca no nosso planeta. Qual é a profundidade da tua marca? Calcula a pegada de carbono do teu último voo:...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Médio",
-        title: "Queres beber? Pensa duas vezes!",
-        points: 25,
+        difficulty: "Fácil",
+        title: "Observa as pegadas da tua viagem",
+        points: 10,
         description:
-          "Quando saíres com amigos ou família, leva uma garrafa grande de água contigo, que possas partilhar. Até porque, a este ponto, já deves ter sido capaz de convencer todos à tua volta a terem o...",
+          "Os teus hábitos de transporte são de grande importância para as alterações climáticas devido às suas emissões de CO2. Verifica a pegada de carbono da tua próxima viagem – quer viajes de carro,...",
         link: "",
       },
       {
         id: 3,
-        difficulty: "Médio",
-        title: "Que ouriço!",
-        points: 25,
+        difficulty: "Fácil",
+        title: "Pegada do pneu",
+        points: 10,
         description:
-          "Os ouriços ou porcos-espinho não são apenas queridos, são também valiosos controladores de pragas. Sabes o que podes fazer para os atrair para o teu jardim ou para um parque? Não removas...",
+          "Calcula, todos os dias, a pegada da tua viagem diária de carro e toma uma decisão sobre como gostarias de a aproveitar. https://www.carbonfootprint.com/calculator.aspx Confirma a...",
         link: "",
       },
       {
         id: 4,
-        difficulty: "Fácil",
-        title: "Aproveita - liga o modo silencioso",
-        points: 10,
+        difficulty: "Médio",
+        title: "Férias sobre carris",
+        points: 25,
         description:
-          "Lembras-te do Capuchinho Vermelho? Ela falava com o Lobo Mau cara-a-cara. Tenta fazer o mesmo: desliga o teu telemóvel quando fores passear no parque ou na floresta, e talvez tenhas a...",
+          "Que tal umas férias de comboio? Ou uma viagem de negócios? Verifica se é possível chegares ao teu destino de férias de comboio. Sempre que possível, escolhe o comboio como o meio de transporte,...",
         link: "",
       },
     ],
@@ -61,7 +61,7 @@ const ChallengePublic02 = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/1" className="back-link">
+            <a href="/mission/5" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +120,4 @@ const ChallengePublic02 = () => {
   );
 };
 
-export default ChallengePublic02;
+export default ChallengeMobility02;

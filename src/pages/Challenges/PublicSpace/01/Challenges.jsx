@@ -7,7 +7,7 @@ import "./challenges.css";
 
 import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-1.png";
 
-const Challenges = () => {
+const ChallengePublic01 = () => {
   const challengeData = {
     title: "Modelos a Seguir - Em movimento!",
     bonusPoints: 100,
@@ -61,7 +61,7 @@ const Challenges = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/2" className="back-link">
+            <a href="/mission/1" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +120,4 @@ const Challenges = () => {
   );
 };
 
-export default Challenges;
+export default ChallengePublic01;

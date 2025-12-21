@@ -5,50 +5,41 @@ import Footer from "../../../../components/Footer";
 import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-1.png";
+import icon_1 from "../../../../assets/images/missions/public_mission/icons/icon-4.png";
 
-const Challenges = () => {
+const ChallengePublic04 = () => {
   const challengeData = {
-    title: "Modelos a Seguir - Em movimento!",
-    bonusPoints: 100,
+    title: "Baywatch - 1,2,3, val!",
+    bonusPoints: 25,
     description:
-      "Ruas, avenidas ou paragens de autocarro - todas estas são possíveis passarelas para modelos sustentáveis. Mostra os teus melhores movimentos ecológicos e entra na onda amiga do ambiente!",
-    progressPercentage: 25,
+      "Fazer caiaque ou só relaxar à beira do rio - tão bom. Mas o que farás com o plástico da barra de chocolate que comeste para teres energia?",
+    progressPercentage: 0,
     tasks: [
       {
         id: 1,
-        difficulty: "Fácil",
-        title: "O meu lixo - o meu problema",
-        points: 10,
+        difficulty: "Médio",
+        title: "Passa de mascador a chiczador! Chegou o momento!",
+        points: 25,
         description:
-          "Quando regressares de um passeio, de uma viagem, de uma caminhada, traz de volta tudo aquilo que levaste contigo. Como? Coloca todo o lixo e desperdício num saco co...",
+          "És um mascador? Nem por isso? Os teus amigos e família fazem parte do grupo de mascadores? Chegou o momento de tornar o mascar de pastilha elástica um hábito eco-saudável. Online ou num...",
         link: "",
       },
       {
         id: 2,
-        difficulty: "Fácil",
-        title: "TATG - Traz A Tua Garrafa",
-        points: 10,
+        difficulty: "Difícil",
+        title: "Não podes salvar o mundo sozinho!",
+        points: 75,
         description:
-          "A correr pela cidade? À espera de um autocarro? Ou só a vaguear? Mais tarde ou mais cedo irás sentir sede. Lembra-te disto antes de saires de casa - leva sempre contigo...",
+          "Conta a um amigo sobre esta gamificação e o seu sucesso na poupança de recursos. Quanto mais pessoas jogarem, maior será o impacto que teremos. Por isso, faz com que todo o mundo saiba!",
         link: "",
       },
       {
         id: 3,
-        difficulty: "Médio",
-        title: "Diz não aos apanhadores de folhas",
-        points: 25,
-        description:
-          "Quando estiveres a passear à sombra de uma árvore ou a passar por arbustos e plantas, evita apanhar folhas e flores ou partir ramos. Se a tua reação imediata é 'O quê?! Eu...",
-        link: "",
-      },
-      {
-        id: 4,
         difficulty: "Difícil",
-        title: "Acaba com o barulho, sê único!",
+        title: "Deixa as árvores e as abelhas em paz!",
         points: 75,
         description:
-          "Planta uma árvore ou um arbusto para combater o barulho. Envolve-te na guerrilha da jardinagem e fala com as autoridades locais para perceberes quais os melhores locais...",
+          "Os espaços verdes têm habitantes indígenas - árvores, plantas, animais, aves, insetos e...mosquitos. Quer queiras quer não, és um visitante, por isso comporta-te como um convidado culto, não...",
         link: "",
       },
     ],
@@ -61,7 +52,7 @@ const Challenges = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/2" className="back-link">
+            <a href="/mission/1" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -120,4 +111,4 @@ const Challenges = () => {
   );
 };
 
-export default Challenges;
+export default ChallengePublic04;
