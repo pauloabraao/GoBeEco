@@ -38,6 +38,8 @@ import ChallengeMobility04 from "./pages/Challenges/Mobility/04/Challenges";
 
 import Account from "./pages/Account/Account";
 import Ranking from "./pages/Ranking/Ranking";
+import GoBeEcoGame from "./pages/GoBeEcoGame/GoBeEcoGame";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
@@ -108,6 +110,16 @@ function App() {
         <Route
           path="/ranking"
           element={<Ranking />}
+        />
+
+        <Route
+          path="/gobeeco-game"
+          element={<GoBeEcoGame />}
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
         />
 
       </Routes>

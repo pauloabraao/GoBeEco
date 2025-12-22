@@ -1,0 +1,111 @@
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #9cbcd8;
+    /* Light blue background matching design */
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Logo */
+.login-logo-container {
+    margin-bottom: 20px;
+}
+
+.login-logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Title */
+.login-title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Form */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #a0aec0;
+    /* Placeholder color style */
+    background-color: #ffffff;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+.form-input::placeholder {
+    color: #cbd5e0;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    /* Pill shape */
+    border: none;
+    background-color: #1a202c;
+    /* Dark blue/black */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+/* Footer Link */
+.login-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+}
