@@ -36,6 +36,9 @@ import ChallengeMobility02 from "./pages/Challenges/Mobility/02/Challenges";
 import ChallengeMobility03 from "./pages/Challenges/Mobility/03/Challenges";
 import ChallengeMobility04 from "./pages/Challenges/Mobility/04/Challenges";
 
+import Account from "./pages/Account/Account";
+import Ranking from "./pages/Ranking/Ranking";
+
 function App() {
   return (
     <BrowserRouter>
@@ -96,6 +99,17 @@ function App() {
           path="/challenges/mobility/4"
           element={<ChallengeMobility04 />}
         />
+
+        <Route
+          path="/account"
+          element={<Account />}
+        />
+
+        <Route
+          path="/ranking"
+          element={<Ranking />}
+        />
+
       </Routes>
     </BrowserRouter>
   );

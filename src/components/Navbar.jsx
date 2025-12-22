@@ -76,7 +76,9 @@ const Navbar = () => {
 
           {/* Trophy + Bell wrapper */}
           <div className="icon-wrapper notification-wrapper">
-            <img src={trophyIcon} alt="Trophy" className="icon trophy-icon" />
+            <Link to="/ranking">
+              <img src={trophyIcon} alt="Trophy" className="icon trophy-icon" />
+            </Link>
 
             {/* 🔔 BELL ICON */}
             <img

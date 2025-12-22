@@ -1,0 +1,116 @@
+.ranking-page {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  background-color: #f0f6fc;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  color: #1b3a57;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ranking-card {
+  background-color: #e3eaf1; 
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: #1b3a57;
+  font-size: 16px;
+}
+
+.rank-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rank-pos {
+  font-weight: 600;
+  color: #64748b;
+  min-width: 35px;
+}
+
+.rank-name {
+  font-weight: 500;
+}
+
+.rank-points {
+  font-weight: 700;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.ranking-separator {
+  text-align: left;
+  padding: 10px 0;
+  color: #64748b;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 5px;
+}
+
+.highlight-user .rank-na
+.highlight-user .rank-points,
+.highlight-user .rank-pos {
+    color: #1b4857;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  
+  .ranking-page {
+    padding: 20px 15px;
+  }
+
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .ranking-card {
+    padding: 20px 15px;
+    width: 90%;
+  }
+
+  .ranking-item {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .rank-points {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  
+  .ranking-item.highlight-user .rank-name,
+  .ranking-item.highlight-user .rank-points,
+  .ranking-item.highlight-user .rank-pos {
+      font-size: 15px;
+  }
+}
