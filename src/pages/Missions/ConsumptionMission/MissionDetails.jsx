@@ -6,28 +6,16 @@ const MissionDetails = () => {
     <section className="consumption-mission-hero">
       <div className="consumption-mission-content">
         <div className="consumption-mission-text">
-          <span className="consumption-mission-tag">Missão 1</span>
+          <span className="consumption-mission-tag">Missão 3</span>
 
-          <h1>
-            Consumo: <br />
-            Evitando desperdícios.
-          </h1>
+          <h1>Obter e usar bens de consumo</h1>
 
           <h4 className="consumption-about-mission">Sobre a missão</h4>
-          <p className="consumption-about-mission">
-            Pequenos hábitos - pequenas mudanças que mudam tudo.
-          </p>
 
           <p className="consumption-about-mission">
-            Quem quer que frequente, a qualquer momento e em qualquer lugar,
-            espaços públicos, deve lembrar-se: é nossa responsabilidade
-            partilhada deixá-los, pelo menos, na mesma condição que os
-            encontrámos.
-          </p>
-
-          <p className="consumption-about-mission">
-            Espaços públicos são todos aqueles de acesso livre e fácil. Não são
-            "lugares de ninguém": são lugares teus também.
+            Aprenderás a fazer escolhas de consumo mais sustentáveis e a reduzir
+            a poluição e desperdício causados pelos bens que adquirimos - desde
+            comida a produtos domésticos.
           </p>
         </div>
 
@@ -37,7 +25,7 @@ const MissionDetails = () => {
 
             <div className="consumption-badge-texts">
               <h5>Medalha</h5>
-              <strong>[R]-Evolucionário</strong>
+              <strong>Mestre dos Bens Sustentáveis</strong>
               <p>para concluir a missão</p>
             </div>
           </div>

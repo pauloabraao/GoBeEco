@@ -33,14 +33,13 @@ const Navbar = () => {
 
   const toggleNotifications = () => {
     setShowNotifications((prev) => !prev);
-    setShowAccountMenu(false); // close other popup
+    setShowAccountMenu(false);
   };
 
   const toggleAccountMenu = () => {
-    setShowAccountMenu((prev) => !prev);
-    setShowNotifications(false); // close other popup
+    setShowAccountMenu((prev) => !prev); // Simply toggle the state
+    setShowNotifications(false); // Ensure notifications are closed
   };
-
   return (
     <nav className="navbar">
       {/* LEFT: LOGO */}
@@ -77,7 +76,9 @@ const Navbar = () => {
 
           {/* Trophy + Bell wrapper */}
           <div className="icon-wrapper notification-wrapper">
-            <img src={trophyIcon} alt="Trophy" className="icon trophy-icon" />
+            <Link to="/ranking">
+              <img src={trophyIcon} alt="Trophy" className="icon trophy-icon" />
+            </Link>
 
             {/* 🔔 BELL ICON */}
             <img
@@ -98,7 +99,10 @@ const Navbar = () => {
               src={userIcon}
               alt="User Profile"
               className="icon user-icon"
-              onClick={toggleAccountMenu}
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent event bubbling
+                toggleAccountMenu();
+              }}
             />
 
             {/* SHOW ACCOUNT MENU */}

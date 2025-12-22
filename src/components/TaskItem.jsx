@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const TaskItem = ({ difficulty, title, description, points }) => {
+const TaskItem = ({ difficulty, title, description, points, link }) => {
   // Helper function to determine difficulty class
   const getDifficultyClass = (level) => {
     return difficulty.toLowerCase() === level ? "active" : "";
@@ -26,7 +27,9 @@ const TaskItem = ({ difficulty, title, description, points }) => {
         <div className="task-points-badge">{points}</div>
       </div>
 
-      <h4 className="task-title">{title}</h4>
+      <Link to={link} className="task-title">
+        {title}
+      </Link>
       <p className="task-description">{description}</p>
     </div>
   );

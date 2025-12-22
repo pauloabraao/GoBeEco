@@ -9,6 +9,11 @@
   padding: 60px 80px;
   color: white;
   overflow: hidden;
+  width: 100%;
+  height: 510px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .work-mission-hero::before {
@@ -84,7 +89,7 @@
 .work-badge-medal {
   width: 84px;
   height: 101px;
-  background-image: url("../../../assets/images/missions/work_mission/medal.svg");
+  background-image: url("../../../assets/images/missions/work_mission/medal.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -113,7 +118,7 @@
   height: 90px;
   border-radius: 50%;
   border: 8px solid #f2f2f2;
-  border-top: 8px solid orange;
+  border-top: 8px solid var(--m4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,7 +141,7 @@
   gap: 20px;
 }
 
-.challenge-card {
+.work-challenge-card {
   background: #f7f9fc;
   padding: 20px;
   border-radius: 10px;
@@ -154,17 +159,17 @@
   background-position: center;
 }
 
-.challenge-card:hover {
+.work-challenge-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.challenge-card .icon {
+.work-challenge-card .icon {
   font-size: 32px;
 }
 
-.challenge-card.highlight {
-  border-bottom: 4px solid orange;
+.work-challenge-card.highlight {
+  border-bottom: 4px solid var(--m4);
 }
 
 /* QUIZ */
@@ -184,6 +189,9 @@
   .challenges-section,
   .quiz-section {
     padding: 24px 16px;
+  }
+  .work-mission-hero {
+    height: 150px;
   }
 
   .work-mission-content {
@@ -214,6 +222,7 @@
     width: 55%;
     padding: 16px;
     gap: 12px;
+    display: none;
   }
 
   .work-badge-texts h5 {
@@ -233,6 +242,7 @@
     height: 70px;
     border-width: 6px;
     font-size: 14px;
+    display: none;
   }
 
   .challenges-grid {
@@ -240,12 +250,12 @@
     gap: 16px;
   }
 
-  .challenge-card {
+  .work-challenge-card {
     padding: 16px;
     gap: 12px;
   }
 
-  .challenge-card .icon {
+  .work-challenge-card .icon {
     width: 60px;
     height: 72px;
   }
@@ -257,12 +267,16 @@
 }
 
 @media (max-width: 480px) {
+  .work-mission-hero {
+    height: 150px;
+  }
   .work-mission-text h1 {
     font-size: 24px;
   }
 
   .work-badge-box {
     flex-direction: row;
+    display: none;
   }
 
   .work-badge-medal {
@@ -273,9 +287,10 @@
   .work-progress-circle {
     width: 60px;
     height: 60px;
+    display: none;
   }
 
-  .challenge-card .icon {
+  .work-challenge-card .icon {
     width: 54px;
     height: 65px;
   }

@@ -1,50 +1,64 @@
 import React from "react";
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
-import TaskItem from "../../../components/TaskItem";
+import { Link } from "react-router-dom";
+import Navbar from "../../../../components/Navbar";
+import Footer from "../../../../components/Footer";
+import TaskItem from "../../../../components/TaskItem";
 import "./challenges.css";
 
-import icon_1 from "../../../assets/images/missions/public_mission/icons/icon-1.png";
+import icon_1 from "../../../../assets/images/missions/consumption_mission/icons/icon-4.png";
 
-const Challenges = () => {
+const ChallengeConsumption04 = () => {
   const challengeData = {
-    title: "Modelos a Seguir - Em movimento!",
+    title: "Vamos Transformar-te num Especialista do Zero Desperdício!",
     bonusPoints: 100,
     description:
-      "Ruas, avenidas ou paragens de autocarro - todas estas são possíveis passarelas para modelos sustentáveis. Mostra os teus melhores movimentos ecológicos e entra na onda amiga do ambiente!",
-    progressPercentage: 25,
+      "Aqui, irás aprender como os nossos hábitos podem contribuir para a acumulação de desperdício e poluição, e verás como pequenos gestos levam a grandes mudanças.",
+    progressPercentage: 0,
     tasks: [
       {
         id: 1,
         difficulty: "Fácil",
-        title: "O meu lixo - o meu problema",
+        title: "O meu produto, as minhas regras!",
         points: 10,
         description:
-          "Quando regressares de um passeio, de uma viagem, de uma caminhada, traz de volta tudo aquilo que levaste contigo. Como? Coloca todo o lixo e desperdício num saco co...",
+          "Nesta tarefa, deves levar o teu próprio recipiente da próxima vez que fores comprar um produto que seja servido numa embalagem de uso único. Podes, por exemplo, pedir o café no teu próprio copo,...",
+        link: "",
       },
       {
         id: 2,
-        difficulty: "Fácil",
-        title: "TATG - Traz A Tua Garrafa",
-        points: 10,
+        difficulty: "Médio",
+        title: "Detox Digital - analógico vs digital, antigo vs novo",
+        points: 25,
         description:
-          "A correr pela cidade? À espera de um autocarro? Ou só a vaguear? Mais tarde ou mais cedo irás sentir sede. Lembra-te disto antes de saires de casa - leva sempre contigo...",
+          "É altura de escolheres novos hábitos para esta semana! Vai a uma loja de aluguer de filmes e escolhe um para veres. Ou escolhe um livro da tua estante ou da biblioteca local e assinala dois dias para...",
+        link: "",
       },
       {
         id: 3,
         difficulty: "Médio",
-        title: "Diz não aos apanhadores de folhas",
+        title: "Hora de reciclar!",
         points: 25,
         description:
-          "Quando estiveres a passear à sombra de uma árvore ou a passar por arbustos e plantas, evita apanhar folhas e flores ou partir ramos. Se a tua reação imediata é 'O quê?! Eu...",
+          "Encontra espaços na tua zona onde seja possível entregar garrafas de vidro, aparelhos eletrónicos, baterias velhas ou óleo alimentar usado. Partilha esta informação com os teus vizinhos e amigos.",
+        link: "",
       },
       {
         id: 4,
-        difficulty: "Difícil",
-        title: "Acaba com o barulho, sê único!",
-        points: 75,
+        difficulty: "Fácil",
+        title: "Verifica os teus medicamentos!",
+        points: 10,
         description:
-          "Planta uma árvore ou um arbusto para combater o barulho. Envolve-te na guerrilha da jardinagem e fala com as autoridades locais para perceberes quais os melhores locais...",
+          "Organiza o teu armário dos medicamentos, e entrega na farmácia ou num ponto de recolha aqueles cuja validade já acabou. Nunca deites medicamentos no lixo comum, ou, pior, na sanita!",
+        link: "",
+      },
+      {
+        id: 5,
+        difficulty: "Fácil",
+        title: "Cuida de ti - e das árvores!",
+        points: 10,
+        description:
+          "Troca a tua esponja de plástico por uma alternativa mais sustentável, como uma tolha. Além disso, tenta procurar alternativas mais ecológicas ao papel higiênico que normalmente usas. Para além...",
+        link: "",
       },
     ],
   };
@@ -56,7 +70,7 @@ const Challenges = () => {
         {/* Hero Section showing title and icon */}
         <section className="challenge-details-hero">
           <div className="challenge-hero-content">
-            <a href="/mission/2" className="back-link">
+            <a href="/mission/1" className="back-link">
               &lt; Voltar à missão
             </a>
 
@@ -104,6 +118,7 @@ const Challenges = () => {
                 title={task.title}
                 description={task.description}
                 points={task.points}
+                link={task.link}
               />
             ))}
           </div>
@@ -114,4 +129,4 @@ const Challenges = () => {
   );
 };
 
-export default Challenges;
+export default ChallengeConsumption04;

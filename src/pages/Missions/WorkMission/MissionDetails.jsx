@@ -6,7 +6,7 @@ const MissionDetails = () => {
     <section className="work-mission-hero">
       <div className="work-mission-content">
         <div className="work-mission-text">
-          <span className="work-mission-tag">Missão 1</span>
+          <span className="work-mission-tag">Missão 4</span>
 
           <h1>Hábitos no local de trabalho</h1>
 
@@ -16,15 +16,14 @@ const MissionDetails = () => {
           </p>
 
           <p className="work-about-mission">
-            Quem quer que frequente, a qualquer momento e em qualquer lugar,
-            espaços públicos, deve lembrar-se: é nossa responsabilidade
-            partilhada deixá-los, pelo menos, na mesma condição que os
-            encontrámos.
+            Pequenas ações têm um grande impacto positivo no ambiente. Tenta
+            usar menos eletricidade e reduzir o consumo de energia - estarás a
+            contribuir para um mundo mais saudável.
           </p>
 
           <p className="work-about-mission">
-            Espaços públicos são todos aqueles de acesso livre e fácil. Não são
-            "lugares de ninguém": são lugares teus também.
+            Pronto para salvar o mundo e seres o funcionário do mês? Aqui vamos
+            nós!
           </p>
         </div>
 
@@ -34,7 +33,7 @@ const MissionDetails = () => {
 
             <div className="work-badge-texts">
               <h5>Medalha</h5>
-              <strong>[R]-Evolucionário</strong>
+              <strong>Funcionário do Mês</strong>
               <p>para concluir a missão</p>
             </div>
           </div>

@@ -1,0 +1,231 @@
+/* =========================================
+   CHALLENGE DETAILS PAGE (Challengers.jsx)
+   ========================================= */
+
+.challenge-details-page {
+  background-color: #f8f9fa; /* Slightly off-white background for the main content area */
+  min-height: 100vh;
+}
+
+/* --- Challenge Hero Section --- */
+.challenge-details-hero {
+  position: relative;
+  /* Using a dummy background image path here based on existing pattern.
+       In the screenshot, it looks like a faint white/grey abstract shape
+       over a white background. */
+  /* background-image: url("../../../assets/images/missions/public_mission/background.jpg"); */
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 80px 60px;
+  overflow: hidden;
+}
+
+/* Adding a heavy white gradient overlay to fade out whatever background image is used, matching screenshot */
+.challenge-details-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/images/missions/home_mission/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-blend-mode: luminosity;
+  filter: brightness(1);
+  z-index: 0;
+}
+
+.challenge-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.challenge-header-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.challenge-big-icon {
+  width: 80px;
+  height: 100px; /* Adjusted aspect ratio based on screenshot icons */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex-shrink: 0;
+}
+
+.challenge-header-text .challenge-overline {
+  display: block;
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 5px;
+}
+
+.challenge-header-text h1 {
+  font-size: 36px;
+  color: #1b3a57;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+
+.challenge-header-text .bonus-points {
+  font-weight: 700;
+  color: #1b3a57;
+  margin: 0;
+}
+
+/* --- Challenge Body Section --- */
+.challenge-details-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 80px;
+}
+
+.challenge-info-block {
+  margin-bottom: 40px;
+}
+
+.challenge-info-block h5 {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.challenge-info-block p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* --- Progress Bar --- */
+.challenge-progress-block {
+  margin-bottom: 50px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: greenyellow; /* Matching the orange from the screenshot */
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* --- Task Items List --- */
+.tasks-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* TaskItem Component Styles */
+.task-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.difficulty-tags {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.diff-separator {
+  margin: 0 5px;
+  font-size: 10px;
+}
+
+/* Style for the selected difficulty tag */
+.diff-tag.active {
+  color: white;
+  background-color: rgba(30, 255, 0, 0.8); /* Subtle orange background */
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.task-points-badge {
+  background-color: #e2e8f0;
+  color: #475569;
+  font-weight: 700;
+  font-size: 14px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.task-title {
+  font-size: 18px;
+  color: #1b3a57;
+  margin: 0 0 10px 0;
+}
+
+.task-description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  /* Optional: ellipsis for long text if needed, though screenshot shows wrapping */
+  /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+}
+
+/* Responsive adjustments for the new page */
+@media (max-width: 900px) {
+  .challenge-details-hero,
+  .challenge-details-body {
+    padding: 30px 20px;
+  }
+
+  .challenge-header-text h1 {
+    font-size: 28px;
+  }
+}

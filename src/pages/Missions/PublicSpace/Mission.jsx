@@ -21,7 +21,10 @@ const MissionsPublic = () => {
           <h3 className="section-title">Desafios</h3>
 
           <div className="challenges-grid">
-            <Link to="/challenges/1" className="challenge-card highlight">
+            <Link
+              to="/challenges/public/1"
+              className="public-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_1})` }}
@@ -32,7 +35,10 @@ const MissionsPublic = () => {
               </div>
             </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/public/2"
+              className="public-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_2})` }}
@@ -41,9 +47,12 @@ const MissionsPublic = () => {
                 <h4>Heróis Verdes, Guardiões de Parques e Florestas</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/public/3"
+              className="public-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_3})` }}
@@ -52,9 +61,12 @@ const MissionsPublic = () => {
                 <h4>Animal Social Sustentável - És tu o TAL?</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/public/4"
+              className="public-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_4})` }}
@@ -63,7 +75,7 @@ const MissionsPublic = () => {
                 <h4>Baywatch - 1,2,3, vai!</h4>
                 <p>25 pts</p>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 

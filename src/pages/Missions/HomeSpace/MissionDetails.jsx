@@ -6,25 +6,16 @@ const MissionDetails = () => {
     <section className="home-mission-hero">
       <div className="home-mission-content">
         <div className="home-mission-text">
-          <span className="home-mission-tag">Missão 1</span>
+          <span className="home-mission-tag">Missão 2</span>
 
-          <h1>Lar Doce Lar</h1>
+          <h1>Sua casa - Sua decisão</h1>
 
           <h4 className="home-about-mission">Sobre a missão</h4>
-          <p className="home-about-mission">
-            Pequenos hábitos - pequenas mudanças que mudam tudo.
-          </p>
 
           <p className="home-about-mission">
-            Quem quer que frequente, a qualquer momento e em qualquer lugar,
-            espaços públicos, deve lembrar-se: é nossa responsabilidade
-            partilhada deixá-los, pelo menos, na mesma condição que os
-            encontrámos.
-          </p>
-
-          <p className="home-about-mission">
-            Espaços públicos são todos aqueles de acesso livre e fácil. Não são
-            "lugares de ninguém": são lugares teus também.
+            Manutenção da casa, cozinha, limpeza e entretenimento: em qualquer
+            atividade que se desenrole dentro das nossas quatro paredes, temos a
+            possibilidade de escolher como usamos os recursos.
           </p>
         </div>
 
@@ -34,7 +25,7 @@ const MissionDetails = () => {
 
             <div className="home-badge-texts">
               <h5>Medalha</h5>
-              <strong>[R]-Evolucionário</strong>
+              <strong>Herói Climático Secreto</strong>
               <p>para concluir a missão</p>
             </div>
           </div>

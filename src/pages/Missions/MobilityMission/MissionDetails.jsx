@@ -6,25 +6,22 @@ const MissionDetails = () => {
     <section className="mobility-mission-hero">
       <div className="mobility-mission-content">
         <div className="mobility-mission-text">
-          <span className="mobility-mission-tag">Missão 1</span>
+          <span className="mobility-mission-tag">Missão 5</span>
 
           <h1>No Caminho Verde</h1>
 
           <h4 className="mobility-about-mission">Sobre a missão</h4>
+
           <p className="mobility-about-mission">
-            Pequenos hábitos - pequenas mudanças que mudam tudo.
+            Os meios de transporte têm um grande impacto na poluição ambiental e
+            contribuem para a mudança climática. Por isso mesmo, temos de
+            escolher o caminho verde, em direção a um planeta mais saudável e
+            seguro.
           </p>
 
           <p className="mobility-about-mission">
-            Quem quer que frequente, a qualquer momento e em qualquer lugar,
-            espaços públicos, deve lembrar-se: é nossa responsabilidade
-            partilhada deixá-los, pelo menos, na mesma condição que os
-            encontrámos.
-          </p>
-
-          <p className="mobility-about-mission">
-            Espaços públicos são todos aqueles de acesso livre e fácil. Não são
-            "lugares de ninguém": são lugares teus também.
+            Aceita os nossos desafios e muda os teus hábitos - torna-te um Líder
+            da Ecomobilidade.
           </p>
         </div>
 
@@ -34,7 +31,7 @@ const MissionDetails = () => {
 
             <div className="mobility-badge-texts">
               <h5>Medalha</h5>
-              <strong>[R]-Evolucionário</strong>
+              <strong>Líder da Ecomobilidade</strong>
               <p>para concluir a missão</p>
             </div>
           </div>

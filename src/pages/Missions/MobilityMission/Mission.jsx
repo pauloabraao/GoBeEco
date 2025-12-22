@@ -21,49 +21,61 @@ const MissionsMobility = () => {
           <h3 className="section-title">Desafios</h3>
 
           <div className="challenges-grid">
-            <Link to="/challenges/1" className="challenge-card highlight">
+            <Link
+              to="/challenges/mobility/1"
+              className="mobility-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_1})` }}
               ></div>
               <div>
-                <h4>Modelos a Seguir - Em movimento!</h4>
+                <h4>A Forma como te Moves</h4>
                 <p>0 pts</p>
               </div>
             </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/mobility/2"
+              className="mobility-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_2})` }}
               ></div>
               <div>
-                <h4>Heróis Verdes, Guardiões de Parques e Florestas</h4>
+                <h4>Mede a tua Pegada</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/mobility/3"
+              className="mobility-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_3})` }}
               ></div>
               <div>
-                <h4>Animal Social Sustentável - És tu o TAL?</h4>
+                <h4>Torna-te um EcoCondutor</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/mobility/4"
+              className="mobility-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_4})` }}
               ></div>
               <div>
-                <h4>Baywatch - 1,2,3, vai!</h4>
+                <h4>Em Viagem</h4>
                 <p>25 pts</p>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 

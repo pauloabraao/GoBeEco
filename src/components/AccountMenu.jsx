@@ -1,14 +1,18 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./AccountMenu.css";
 
 export default function AccountMenu({ open, onClose }) {
   const menuRef = useRef(null);
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        onClose(); // tell Navbar to close
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        !e.target.closest(".user-icon") // Exclude user icon from outside click
+      ) {
+        onClose();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -20,7 +24,9 @@ export default function AccountMenu({ open, onClose }) {
   return (
     <div className="menu-wrapper" ref={menuRef}>
       <div className="popup-menu">
-        <button className="popup-item">A minha conta</button>
+        <Link to="/account">
+          <button className="popup-item">A minha conta</button>
+        </Link>
         <button className="popup-item">Terminar Sessão</button>
       </div>
     </div>

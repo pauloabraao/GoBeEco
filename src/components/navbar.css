@@ -1,17 +1,14 @@
-/* CONTAINER */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 40px;
   background-color: #ffffff;
   font-family: "Segoe UI", sans-serif;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   height: 80px;
-
-  /* --- CHANGED: Added relative positioning and z-index --- */
   position: relative;
-  z-index: 50; /* Ensures the hanging icons float ABOVE the green section */
+  z-index: 50;
 }
 
 /* --- LEFT: LOGO --- */
@@ -73,6 +70,7 @@
   align-items: flex-end;
   justify-content: center;
   gap: 4px;
+  padding-left: 24rem;
 }
 
 .user-actions {
@@ -145,12 +143,21 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-  }
 
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar-right {
+    padding-left: 0;
+  }
+  .user-points {
+    display: none;
+  }
   .navbar-center {
+    display: none;
+  }
+  .language-selector {
     display: none;
   }
 }

@@ -9,6 +9,11 @@
   padding: 60px 80px;
   color: white;
   overflow: hidden;
+  width: 100%;
+  height: 510px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .public-mission-hero::before {
@@ -136,7 +141,7 @@
   gap: 20px;
 }
 
-.challenge-card {
+.public-challenge-card {
   background: #f7f9fc;
   padding: 20px;
   border-radius: 10px;
@@ -154,16 +159,16 @@
   background-position: center;
 }
 
-.challenge-card:hover {
+.public-challenge-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.challenge-card .icon {
+.public-challenge-card .icon {
   font-size: 32px;
 }
 
-.challenge-card.highlight {
+.public-challenge-card.highlight {
   border-bottom: 4px solid orange;
 }
 
@@ -184,6 +189,9 @@
   .challenges-section,
   .quiz-section {
     padding: 24px 16px;
+  }
+  .public-mission-hero {
+    height: 150px;
   }
 
   .public-mission-content {
@@ -214,6 +222,7 @@
     width: 55%;
     padding: 16px;
     gap: 12px;
+    display: none;
   }
 
   .public-badge-texts h5 {
@@ -233,6 +242,7 @@
     height: 70px;
     border-width: 6px;
     font-size: 14px;
+    display: none;
   }
 
   .challenges-grid {
@@ -240,12 +250,12 @@
     gap: 16px;
   }
 
-  .challenge-card {
+  .public-challenge-card {
     padding: 16px;
     gap: 12px;
   }
 
-  .challenge-card .icon {
+  .public-challenge-card .icon {
     width: 60px;
     height: 72px;
   }
@@ -257,12 +267,16 @@
 }
 
 @media (max-width: 480px) {
+  .public-mission-hero {
+    height: 150px;
+  }
   .public-mission-text h1 {
     font-size: 24px;
   }
 
   .public-badge-box {
     flex-direction: row;
+    display: none;
   }
 
   .public-badge-medal {
@@ -273,9 +287,10 @@
   .public-progress-circle {
     width: 60px;
     height: 60px;
+    display: none;
   }
 
-  .challenge-card .icon {
+  .public-challenge-card .icon {
     width: 54px;
     height: 65px;
   }

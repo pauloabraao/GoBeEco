@@ -21,49 +21,65 @@ const MissionsConsumption = () => {
           <h3 className="section-title">Desafios</h3>
 
           <div className="challenges-grid">
-            <Link to="/challenges/1" className="challenge-card highlight">
+            <Link
+              to="/challenges/consumption/1"
+              className="consumption-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_1})` }}
               ></div>
               <div>
-                <h4>Modelos a Seguir - Em movimento!</h4>
+                <h4>
+                  Comprar, Não Comprar, Ou o que Comprar: Essa é a Questão!
+                </h4>
                 <p>0 pts</p>
               </div>
             </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/consumption/2"
+              className="consumption-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_2})` }}
               ></div>
               <div>
-                <h4>Heróis Verdes, Guardiões de Parques e Florestas</h4>
+                <h4>Somos o que comemos. O que queres ser?</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/consumption/3"
+              className="consumption-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_3})` }}
               ></div>
               <div>
-                <h4>Animal Social Sustentável - És tu o TAL?</h4>
+                <h4>Tu vs Poluição - Ganha a Batalha!</h4>
                 <p>0 pts</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="challenge-card highlight">
+            <Link
+              to="/challenges/consumption/4"
+              className="consumption-challenge-card highlight"
+            >
               <div
                 className="icon"
                 style={{ backgroundImage: `url(${icon_4})` }}
               ></div>
               <div>
-                <h4>Baywatch - 1,2,3, vai!</h4>
+                <h4>
+                  Vamos Transformar-te num Especialista do Zero Desperdício!
+                </h4>
                 <p>25 pts</p>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 
