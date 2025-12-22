@@ -1,0 +1,211 @@
+/* Main Container */
+.gobeeeco-game-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    /* Assuming a sans-serif font */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background Wave */
+.bg-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    opacity: 0.1;
+    /* Adjust opacity as needed since it looked faint */
+    pointer-events: none;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.game-header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.logo-top {
+    height: 80px;
+    /* Approximate height */
+    width: auto;
+}
+
+/* Main Content */
+.game-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: auto;
+    /* Pushes footer down */
+}
+
+.hero-image-container {
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    width: 120px;
+    /* Approximate size */
+    height: auto;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    /* Dark text */
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.game-description {
+    font-size: 1rem;
+    color: #4a5568;
+    /* Gray text */
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.btn {
+    border: none;
+    border-radius: 25px;
+    /* Pill shape */
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.btn-login {
+    background-color: #9cbcd8;
+    /* Light blue/grey */
+    color: #ffffff;
+}
+
+.btn-create-account {
+    background-color: #a4c639;
+    /* Light green */
+    background-color: #a8c447;
+    /* Adjusted to match image closer */
+    color: #ffffff;
+}
+
+/* Footer */
+.game-footer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.footer-langs {
+    display: flex;
+    gap: 5px;
+    color: #a0aec0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.dot {
+    margin: 0 2px;
+}
+
+/* EU Disclaimer */
+.footer-eu-disclaimer {
+    max-width: 500px;
+    font-size: 0.6rem;
+    color: #a0aec0;
+    line-height: 1.4;
+}
+
+.disclaimer-text {
+    margin-bottom: 15px;
+}
+
+.eu-logo {
+    width: 150px;
+}
+
+.eu-logo-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+.eu-logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 5px 10px;
+    background-color: #f7fafc;
+    /* Temporary bg */
+}
+
+.eu-flag {
+    font-size: 24px;
+}
+
+.eu-text {
+    text-align: left;
+    font-size: 0.6rem;
+    color: #2d6cb5;
+    /* EU Blue */
+    font-weight: bold;
+    line-height: 1.1;
+}

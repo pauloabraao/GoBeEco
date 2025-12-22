@@ -27,7 +27,9 @@ export default function AccountMenu({ open, onClose }) {
         <Link to="/account">
           <button className="popup-item">A minha conta</button>
         </Link>
-        <button className="popup-item">Terminar Sessão</button>
+        <Link to="/gobeeco-game">
+          <button className="popup-item">Terminar Sessão</button>
+        </Link>
       </div>
     </div>
   );
