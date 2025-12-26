@@ -1,0 +1,124 @@
+.container {
+  background: #f4f4f4;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.content {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 40px;
+}
+
+.back {
+  font-size: 12px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.levels {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+}
+
+.levels span {
+  color: #94a3b8;
+}
+
+.levels .active {
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 20px 0 30px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.readMore {
+  display: inline-block;
+  margin: 10px 0 20px;
+  font-size: 12px;
+  color: #f59e0b;
+  cursor: pointer;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.steps span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e5e7eb;
+}
+
+.stepActive {
+  background: #f59e0b !important;
+}
+
+.points {
+  margin: 20px auto;
+  width: 70px;
+  height: 70px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.points span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.points small {
+  font-size: 10px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background: #94b8d6;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.note {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  color: #64748b;
+}

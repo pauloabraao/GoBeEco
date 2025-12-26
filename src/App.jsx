@@ -42,6 +42,9 @@ import Ranking from "./pages/Ranking/Ranking";
 import GoBeEcoGame from "./pages/GoBeEcoGame/GoBeEcoGame";
 import Login from "./pages/Login/Login";
 
+import ChallengeStep from "./pages/challenge/page";
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -107,7 +110,9 @@ function App() {
           path="/account"
           element={<Account />}
         />
-<Route path="/dashboard" element={<Dashboard />} />
+        <Route 
+          path="/dashboard"
+          element={<Dashboard />} />
         <Route
           path="/ranking"
           element={<Ranking />}
@@ -122,6 +127,11 @@ function App() {
           path="/login"
           element={<Login />}
         />
+
+          <Route
+    path="/challenge/:missionId/:stepId"
+    element={<ChallengeStep />}
+  />
 
       </Routes>
     </BrowserRouter>
