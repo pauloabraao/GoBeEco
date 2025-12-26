@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import "./account.css";
+import "./Account.css";
 
 import medal1 from "../../assets/images/account/medal1.svg";
 import medal2 from "../../assets/images/account/medal2.svg";
