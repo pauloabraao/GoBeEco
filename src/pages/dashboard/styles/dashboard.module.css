@@ -1,0 +1,273 @@
+.container {
+  background: #ffffff;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.header {
+  max-width: 520px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.header p {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.missions {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 24px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.card {
+  position: relative;
+  height: 140px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+
+.overlay span {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.overlay h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* cores */
+.yellow {
+  background-color: #c28a1c;
+}
+.green {
+  background-color: #1fa971;
+}
+.purple {
+  background-color: #9a3bb2;
+}
+.blue {
+  background-color: #219ebc;
+}
+.gold {
+  background-color: #caa000;
+}
+
+/* missão especial */
+.special {
+  margin: 60px auto 20px;
+  width: 240px;
+  background: #a9c4df;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+}
+
+.lock {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.special h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.special p {
+  font-size: 11px;
+  color: #0f172a;
+}
+
+/* footer */
+.footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.yellow img {
+  filter: sepia(1) hue-rotate(-20deg) saturate(2);
+}
+
+.green img {
+  filter: sepia(1) hue-rotate(70deg) saturate(2);
+}
+
+.purple img {
+  filter: sepia(1) hue-rotate(260deg) saturate(2);
+}
+
+.blue img {
+  filter: sepia(1) hue-rotate(180deg) saturate(2);
+}
+
+.gold img {
+  filter: sepia(1) hue-rotate(20deg) saturate(2);
+}
+
+
+.overlay span {
+  font-size: 11px;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+.overlay h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.special {
+  position: relative;
+  margin: 50px auto 0;
+  width: 260px;
+  height: 160px;
+  background: #b9d2ea;
+  border-radius: 14px;
+  text-align: center;
+  padding: 28px 20px;
+  box-sizing: border-box;
+}
+
+.specialLock {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+}
+
+.special h4,
+.special p,
+.specialLock {
+  position: relative;
+  z-index: 1;
+}
+
+
+.specialMark {
+  position: absolute;
+
+  left: 10px;         
+  top: 60%;      
+  opacity: 0.14;      
+  transform: translateY(-50%);
+  width: 80px;          
+  height: 80px;
+
+  z-index: 0;            
+}
+
+.specialMark text {
+  fill: #ffffff;
+  font-size: 80px;       
+  font-weight: 700;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.special h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.special p {
+  font-size: 11px;
+  line-height: 1.4;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+
+
+.content {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cta:hover {
+  background: #f4f7fa;
+}
+
+.card.locked {
+  opacity: 0.6;
+  pointer-events: none;
+}

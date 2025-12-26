@@ -36,6 +36,7 @@ import ChallengeMobility02 from "./pages/Challenges/Mobility/02/Challenges";
 import ChallengeMobility03 from "./pages/Challenges/Mobility/03/Challenges";
 import ChallengeMobility04 from "./pages/Challenges/Mobility/04/Challenges";
 
+import Dashboard from "./pages/dashboard/page";
 import Account from "./pages/Account/Account";
 import Ranking from "./pages/Ranking/Ranking";
 import GoBeEcoGame from "./pages/GoBeEcoGame/GoBeEcoGame";
@@ -106,7 +107,7 @@ function App() {
           path="/account"
           element={<Account />}
         />
-
+<Route path="/dashboard" element={<Dashboard />} />
         <Route
           path="/ranking"
           element={<Ranking />}
