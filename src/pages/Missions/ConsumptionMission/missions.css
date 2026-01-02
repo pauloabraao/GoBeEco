@@ -57,6 +57,7 @@
   font-size: 40px;
   line-height: 1.2;
   margin: 10px 0 20px;
+  color: #ffffff;
 }
 
 .consumption-mission-text h4 {
@@ -206,6 +207,7 @@
   .consumption-mission-text h1 {
     font-size: 28px;
     line-height: 1.25;
+    color: #ffffff;
   }
 
   .consumption-mission-text p {
