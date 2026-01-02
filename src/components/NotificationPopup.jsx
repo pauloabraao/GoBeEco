@@ -1,6 +1,7 @@
 import React from "react";
 import "./notificationPopup.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const NotificationPopup = ({
   title = "Tarefas em andamento",
@@ -19,7 +20,9 @@ const NotificationPopup = ({
         </div>
 
         <div className="notif-btn" onClick={onClick}>
-          <MdKeyboardArrowRight size={24} color="#fff" />
+          <Link to="/challenge/1/1">
+            <MdKeyboardArrowRight size={24} color="#fff" />
+          </Link>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const Login = () => {
     const handleLogin = () => {
         if (email.trim() && password.trim()) {
             // Validation passed
-            navigate("/");
+            navigate("/dashboard");
         } else {
             // Validation failed
             alert("Por favor, preencha todos os campos.");

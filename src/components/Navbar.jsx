@@ -45,7 +45,9 @@ const Navbar = () => {
       {/* LEFT: LOGO */}
       <div className="navbar-left">
         <div className="logo-container">
-          <img src={logoImage} alt="Go Be Eco" style={{ height: "60px" }} />
+          <Link to="/dashboard">
+            <img src={logoImage} alt="Go Be Eco" style={{ height: "60px" }} />
+          </Link>
         </div>
       </div>
 

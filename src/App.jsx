@@ -49,7 +49,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MissionsPublic />} />
+        <Route path="/" element={<GoBeEcoGame />} />
         <Route path="/mission/1" element={<MissionsPublic />} />
         <Route path="/mission/2" element={<MissionsHome />} />
         <Route path="/mission/3" element={<MissionsConsumption />} />
@@ -110,7 +110,7 @@ function App() {
           path="/account"
           element={<Account />}
         />
-        <Route 
+        <Route
           path="/dashboard"
           element={<Dashboard />} />
         <Route
@@ -128,10 +128,10 @@ function App() {
           element={<Login />}
         />
 
-          <Route
-    path="/challenge/:missionId/:stepId"
-    element={<ChallengeStep />}
-  />
+        <Route
+          path="/challenge/:missionId/:stepId"
+          element={<ChallengeStep />}
+        />
 
       </Routes>
     </BrowserRouter>
