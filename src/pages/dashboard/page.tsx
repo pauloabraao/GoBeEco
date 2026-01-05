@@ -66,7 +66,7 @@ export default function Dashboard() {
               consciente do impacto ecológico da tua vida quotidiana.
             </p>
 
-            <Link to="/about" className={styles.cta}>
+            <Link to="" className={styles.cta}>
               Descobre mais sobre a app →
             </Link>
           </section>
