@@ -14,7 +14,7 @@ export default function ChallengeStep() {
 
       <main className={styles.container}>
         <div className={styles.content}>
-          <Link to="/mission/1" className={styles.back}>
+          <Link to="/challenges/public/1" className={styles.back}>
             ← Voltar ao desafio
           </Link>
 

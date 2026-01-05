@@ -22,7 +22,7 @@ const ChallengePublic01 = () => {
         points: 10,
         description:
           "Quando regressares de um passeio, de uma viagem, de uma caminhada, traz de volta tudo aquilo que levaste contigo. Como? Coloca todo o lixo e desperdício num saco co...",
-        link: "",
+        link: "/challenge/:missionId/:stepId",
       },
       {
         id: 2,
